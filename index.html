@@ -40,7 +40,7 @@ function clickCell(x,y) {
 // Clicking Of Boxes
   else {
     if (currentPlayer==1) {
-      document.getElementById("cell_"+x+"_"+y).innerHTML="<img src='/happy.png'width ='60' height ='60'>";
+      document.getElementById("cell_"+x+"_"+y).innerHTML="<img src='happy.png' width ='60' height ='60'>";
       grid[x][y]=1;
 	  for(var i=0; i<=2; i++){
 		  if(grid[i][0]===1 && grid[i][1]===1 && grid[i][2]===1){
@@ -87,7 +87,7 @@ function clickCell(x,y) {
 		currentPlayer=2;
     } 
 	 else {
-       document.getElementById("cell_"+x+"_"+y).innerHTML="<img src='/sad.png 'width ='60' height ='60'>";
+       document.getElementById("cell_"+x+"_"+y).innerHTML="<img src='sad.png' width ='60' height ='60'>";
       grid[x][y]=2;
 	  for(var i=0; i<=2; i++){
 		  if(grid[i][0]===2 && grid[i][1]===2 && grid[i][2]===2){
